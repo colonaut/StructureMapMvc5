@@ -2,9 +2,9 @@
 <package >
   <metadata>
     <id>StructureMap.MVC5</id>
-    <version>5.0.0.0</version>
-    <title>StructureMap.DependencyResoulver (MVC5)</title>
-    <authors>Web Advaced, colonaut</authors>
+    <version>5.0.0.1</version>
+    <title>StructureMap.MVC5</title>
+    <authors>Web Advanced, colonaut</authors>
     <owners>colonaut</owners>
     <!--licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl-->
     <projectUrl>https://github.com/colonaut/StructureMapMvc5</projectUrl>
@@ -18,12 +18,12 @@
     </summary>
     <releaseNotes>Initial release</releaseNotes>
     <copyright>Copyright 2013</copyright>
-    <tags>StructureMap Mvc5 Mvc DependencyResolution IoC</tags>
+    <tags>StructureMap Mvc5 Mvc DependencyResolution DependencyResolver IDependencyResolver IoC</tags>
     <dependencies>
       <dependency id="Microsoft.AspNet.Mvc" version="5.0.0" />
       <dependency id="Microsoft.AspNet.WebApi.WebHost" version="5.0.0" />
       <dependency id="Microsoft.AspNet.WebApi.Core" version="5.0.0" />
-      <dependency id="WebActivator" version="2.0.4" />
+      <dependency id="WebActivatorEx" version="2.0.4" />
       <dependency id="CommonServiceLocator" version="1.0" />
       <dependency id="structuremap" version="2.6.4.1" />
     </dependencies>

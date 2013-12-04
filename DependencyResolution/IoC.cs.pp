@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="StructuremapMvc.cs" company="Web Advanced">
+// <copyright file="IoC.cs" company="Web Advanced">
 // Copyright 2012 Web Advanced (www.webadvanced.com)
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,20 +18,25 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.Web.Http;
-using System.Web.Mvc;
+
 using StructureMap;
-using StructureMapMvc5.App_Start;
-using StructureMapMvc5.DependencyResolution;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
-
-namespace StructureMapMvc5.App_Start {
-    public static class StructuremapMvc {
-        public static void Start() {
-			IContainer container = IoC.Initialize();
-            DependencyResolver.SetResolver(new StructureMapDependencyResolver(container));
-            GlobalConfiguration.Configuration.DependencyResolver = new StructureMapDependencyResolver(container);
+namespace $rootnamespace$.DependencyResolution {
+    public static class IoC {
+        public static IContainer Initialize() {
+            ObjectFactory.Initialize(x =>
+                {
+                    x.Scan(scan =>
+                        {
+                            scan.TheCallingAssembly();
+                            scan.WithDefaultConventions();
+                        });
+                    
+                    //Add Mappings here
+                    //x.For<IExample>().Use<Example>();
+                
+                });
+            return ObjectFactory.Container;
         }
     }
 }

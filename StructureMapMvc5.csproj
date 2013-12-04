@@ -92,7 +92,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\StructuremapMvc.cs" />
+    <None Include="App_Start\StructuremapMvc.cs.pp" />
+    <None Include="DependencyResolution\IoC.cs.pp" />
+    <None Include="DependencyResolution\StructureMapDependencyResolver.cs.pp" />
+    <None Include="DependencyResolution\StructureMapDependencyScope.cs.pp" />
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -100,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="StructureMapMVC.nuspec" />
+    <None Include="StructureMapMvc5.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

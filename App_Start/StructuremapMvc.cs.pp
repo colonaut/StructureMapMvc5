@@ -26,7 +26,7 @@ using StructureMapMvc5.DependencyResolution;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 
-namespace StructureMapMvc5.App_Start {
+namespace $rootnamespace$.App_Start {
     public static class StructuremapMvc {
         public static void Start() {
 			IContainer container = IoC.Initialize();

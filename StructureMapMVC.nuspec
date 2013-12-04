@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>StructureMap.MVC5</id>
+    <version>1.0.0.0</version>
+    <title>StructureMap DependencyResoulution for MVC5</title>
+    <authors>colonaut</authors>
+    <owners>colonaut</owners>
+    <!--licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl-->
+    <projectUrl>https://github.com/colonaut/StructureMapMVC</projectUrl>
+    <!--iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      A StructureMap IDependencyResolver wrapper for MVC 5
+    </description>
+    <summary>
+      
+    </summary>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>StructureMap Mvc5 Mvc DependencyResolution IoC</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="≥ 5.0.0" />
+      <dependency id="Microsoft.AspNet.WebApi.WebHost" version="≥ 5.0.0" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="≥ 5.0.0" />
+      <dependency id="WebActivator" version="≥ 2.0.4" />
+      <dependency id="CommonServiceLocator" version="≥ 1.0" />
+      <dependency id="structuremap" version="≥ 2.6.4.1" />
+    </dependencies>
+  </metadata>
+  <files>
+  	<file src="DependencyResolution\StructureMapDependencyResolver.cs.pp" target="content\DependencyResolution" />
+    <file src="DependencyResolution\StructureMapDependencyScope.cs.pp" target="content\DependencyResolution" />
+    <file src="DependencyResolution\IoC.cs.pp" target="content\DependencyResolution" />
+    <file src="App_Start\StructureMapMvc.cs.pp" target="content\App_Start" /> 
+  </files>
+</package>

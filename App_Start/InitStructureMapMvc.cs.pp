@@ -21,7 +21,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 using StructureMap;
-using $rootnamespace$.App_Start;
+using $rootnamespace$;
 using $rootnamespace$.DependencyResolution;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(InitStructureMapMvc), "Start")]

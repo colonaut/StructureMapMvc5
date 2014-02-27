@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>StructureMap.MVC5</id>
-    <version>5.0.0.1</version>
+    <version>5.0.1.0</version>
     <title>StructureMap.MVC5</title>
     <authors>Web Advanced, colonaut</authors>
     <owners>colonaut</owners>

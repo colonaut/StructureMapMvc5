@@ -21,13 +21,13 @@
 using System.Web.Http;
 using System.Web.Mvc;
 using StructureMap;
-using StructureMapMvc5.App_Start;
-using StructureMapMvc5.DependencyResolution;
+using $rootnamespace$.App_Start;
+using $rootnamespace$.DependencyResolution;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(InitStructureMapMvc), "Start")]
 
-namespace StructureMapMvc5.App_Start {
-    public static class StructuremapMvc {
+namespace $rootnamespace$ {
+    public static class InitStructureMapMvc {
         public static void Start() {
 			IContainer container = IoC.Initialize();
             DependencyResolver.SetResolver(new StructureMapDependencyResolver(container));
